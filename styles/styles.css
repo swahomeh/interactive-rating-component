@@ -56,7 +56,12 @@ h2 {
     margin: auto;
 }
 
-.img {
+.rating {
+    position: relative;
+    height: inherit;
+    padding: 0;
+}
+.rating .img {
     position: absolute;
     display: block;
     height: inherit;
@@ -87,10 +92,11 @@ h2 {
     align-content: center;
 }
 
-.content li {
-    padding: 2rem;
+.rating li {
+    /* padding: 2rem; */
     list-style: none;
     margin: auto;
+    height: inherit;
 }
 
 .identity {
