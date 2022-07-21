@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 32px;
+    font-family: "https://fonts.google.com/specimen/Inter";    
+}
+
+h2 {
+    text-align: center;
+}
+.slider-wrapper {
+    padding: 2rem 0;
+}
+.bg-slider {
+    position: relative;
+    height: 400px;
+}
+.bg-slider .quote {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /* display: inline-block; */
+    top: 1.0rem;
+    left: 9rem;
+}
+
+.quote img {
+    margin: auto;
+    max-width: 100%;
+}
+
+.curve {
+    width: 50%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+}
+
+.curve img {
+    width: 100%;
+}
+
+.blob {
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: inherit;
+}
+
+.blob img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.img {
+    position: absolute;
+    display: block;
+    height: inherit;
+    max-width: 100%;
+    margin: auto;
+    top: 0;
+    right: 2rem;
+}
+
+.img img {
+    margin: auto;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2rem;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    height: inherit;
+    max-width: 60%;
+    margin: auto;
+    top: 0;
+    left: 2rem;
+    padding: 0;
+    align-content: center;
+}
+
+.content li {
+    padding: 2rem;
+    list-style: none;
+    margin: auto;
+}
+
+.identity {
+    position: relative;
+    display: block;
+    margin-top: 1rem;
+}
+.identity:first-child, .name {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.identity:nth-child(3), .title {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: .5;
+}
