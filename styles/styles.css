@@ -22,8 +22,8 @@ h2 {
     height: 80px;
     position: absolute;
     /* display: inline-block; */
-    top: 1.0rem;
-    left: 9rem;
+    top: 1.0vw;
+    left: 9vw;
 }
 
 .quote img {
@@ -61,6 +61,12 @@ h2 {
     height: inherit;
     padding: 0;
 }
+.rating li {
+    /* padding: 2rem; */
+    list-style: none;
+    margin: auto;
+    height: inherit;
+}
 .rating .img {
     position: absolute;
     display: block;
@@ -92,13 +98,16 @@ h2 {
     align-content: center;
 }
 
-.rating li {
-    /* padding: 2rem; */
-    list-style: none;
-    margin: auto;
-    height: inherit;
-}
 
+.content .main-text {
+    width: auto;
+    margin: auto;
+}
+.main-text:first-child, .main-text:nth-child(3) {
+    display: block;
+    width: 100%;
+    position: relative;
+}
 .identity {
     position: relative;
     display: block;
@@ -115,4 +124,24 @@ h2 {
     font-size: 1.2rem;
     font-weight: 500;
     opacity: .5;
+}
+
+.rating-controls {
+    display: block;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 35vw;
+    z-index: 9;
+    padding: 1.0rem;
+    padding-right: 1rem;
+    background: white;
+    border-radius: 50px;
+    box-shadow:  -6px 6px 12px #bcbcbc,
+             6px -6px 12px #ffffff;
+}
+.rating-controls > div {
+    display: inline-block;
+}
+.rating-controls .l-arrow {
+    padding-right: 1.5rem;
 }
