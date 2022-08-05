@@ -7,7 +7,6 @@
         <title>Interactive Rating</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
         <link rel="stylesheet" href="./styles/styles.css">
-        <script src="./js/script.js"></script> 
     </head>
     <body id="interactive-rating-component">
         <div><h2>Interactive Slider Component</h2></div>
@@ -23,17 +22,16 @@
                     <div class="blob">
                         <img src="./images/pattern-bg.svg" alt="Zigzag" width="auto" height="auto">
                     </div>
-                    <ul class="rating">
-                        <div class="rating-controls">
-                            <div class="l-arrow" onclick="handleArrow('l')">
-                                <img src="/images/icon-prev.svg" alt="" layout="fill" />
-                            </div>
-                            <div class="r-arrow" onclick="handleArrow('r')">
-                                <img src="/images/icon-next.svg" alt="" layout="fill" />
-                            </div>
+                    <div class="rating-controls">
+                        <div class="l-arrow" onclick="handleArrow('l')">
+                            <img src="/images/icon-prev.svg" alt="" layout="fill" />
                         </div>
-
-                        <li class="1">
+                        <div class="r-arrow" onclick="handleArrow('r')">
+                            <img src="/images/icon-next.svg" alt="" layout="fill" />
+                        </div>
+                    </div>
+                    <ul class="rating" style="transform: translateX(0vw)">
+                        <li class="1 slide-img">
                             <div class="img">
                                 <img src="./images/image-tanya.jpg" alt="Curve">
                             </div>
@@ -51,18 +49,18 @@
                                 </div>    
                             </div>
                         </li>
-                        <li class="1">
+                        <li class="1 slide-img">
                             <div class="img">
                                 <img src="./images/image-john.jpg" alt="Curve">
                             </div>
                             <div class="content">
                                 <div class="main-text">
                                     <span>
-                                        "I've been interested in coding for a while but never taken the jump, until now. I couldn't recommend this course enough. I'm now in the job of my dreams and so excited about the future."
+                                        "How you doing mate?"
                                     </span>
                                     <div>
                                     <div class="identity">
-                                        <Span class="name">Tanya Sinclair</Span>
+                                        <Span class="name">John Larma</Span>
                                         <span class="title">UX Engineer</span>
                                     </div>
                                     </div>
@@ -73,5 +71,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>

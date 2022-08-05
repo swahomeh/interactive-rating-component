@@ -66,6 +66,10 @@ h2 {
     list-style: none;
     margin: auto;
     height: inherit;
+
+    display: block;
+    position: absolute;
+    width: 100%;
 }
 .rating .img {
     position: absolute;
